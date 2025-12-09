@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bachelor of Industrial Technology - Argie Garcia</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* Global */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('images/Web Design Houston Texas.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+}
+
+/* Modern Glass Header */
+header {
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.12);
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 0 28px 28px;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+    transition: 0.3s ease;
+}
+
+header:hover {
+    background: rgba(255, 255, 255, 0.20);
+}
+
+header h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+}
+
+header h3 {
+    font-weight: 300;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* Modern Navigation */
+nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px 0;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.10);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 0 0 20px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 12px;
+    transition: 0.35s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-3px);
+    color: #ffeb70;
+}
+
+/* Profile Photo */
+.profile-photo {
+    text-align: center;
+    margin-top: 40px;
+}
+.profile-photo img {
+    width: 80%;
+    max-width: 230px;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.4);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.45);
+    transition: 0.35s;
+}
+.profile-photo img:hover {
+    transform: scale(1.07);
+}
+
+/* Modern Content Containers */
+section, .content-box {
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.15);
+    margin: 30px auto;
+    padding: 30px 35px;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 18px;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    transition: 0.35s ease;
+}
+
+section:hover, .content-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+}
+
+/* Titles */
+h2 {
+    font-size: 26px;
+    border-left: 4px solid #ffeb70;
+    padding-left: 10px;
+}
+
+/* Lists */
+ul li {
+    margin-bottom: 8px;
+}
+ul li:hover {
+    color: #ffeb70;
+    cursor: pointer;
+}
+
+/* Footer (modern glass) */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px 20px 0 0;
+    color: #fff;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #ffeb70;
+    color: #222;
+    padding: 12px 16px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+#back-to-top:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile Friendly */
+@media (max-width: 600px) {
+    header h1 { font-size: 32px; }
+    nav { flex-direction: column; gap: 10px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Argie Amedo Garcia</h1>
+    <h3>Major in Computer and Information Technology</h3>
+</header>
+
+<nav>
+    <a href="#home">Profile</a>
+    <a href="#aboutmyself">About Myself</a>
+    <a href="#contact">Contact Me</a>
+</nav>
+
+<div class="profile-photo">
+    <img src="images/Sevvy.jpg" alt="Profile Photo">
+</div>
+
+<div class="content-box">
+    Information Technology Student & Independent Rap Artist
+</div>
+
+<section id="home">
+    <h2>Profile Summary</h2>
+    <p>
+        A dedicated Information Technology student with strong interest in software development, computer systems,
+        and digital solutions. Demonstrates excellent analytical skills, adaptability, and a strong commitment to
+        academic excellence. Outside academics, he is also an independent rap artist who writes and performs original
+        music—showcasing creativity, discipline, and communication skills.
+    </p>
+</section>
+
+<section id="aboutmyself">
+    <h2>Academic Pursuits</h2>
+    <p>
+        Degree: Bachelor of Industrial Technology (I.T) Major in Computer and Information Technology <br>
+        Status: College Level (First Semester, SY 2025-2026)
+    </p>
+
+    <h2>Professional Background</h2>
+    <ul>
+        <li>Poultry Nutritionist</li>
+        <li>Line Cook</li>
+        <li>CNC Machinist / Operator</li>
+        <li>Concrete Pump Operator</li>
+    </ul>
+    <h2>Certifications</h2>
+    <ul>
+    <li>NC-2 PASSER: National Certificate II in Driving (TESDA)</li>
+    <li>NC-2 PASSER: National Certificate II in MASONRY (TESDA)</li>
+    </ul>
+    <h2>Personal Details</h2>
+    <p>
+        Name: ARGIE A. GARCIA <br>
+        Alias: Rbreezy / RaRa <br>
+        Date of Birth: 1994/09/13 <br>
+        Address: Lawaan St, Lower Salazar Village, Brgy. Central, City of Mati, Davao Oriental, 8200
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Stay Connected</h2>
+    <p>
+        Facebook: <a href="https://www.facebook.com/rara.aicrag" target="_blank" style="color:#ffeb70;">facebook.com/rara.aicrag</a><br>
+        Email: <a href="mailto:romantikongrapper@gmail.com" style="color:#ffeb70;">romantikongrapper@gmail.com</a><br>
+        Phone: <a href="tel:09563465006" style="color:#ffeb70;">0956 346 5006</a>
+    </p>
+</section>
+
+<footer>
+    © 2025 GARCIA, ARGIE AMEDO | Personal Website Design
+</footer>
+
+<div id="back-to-top" onclick="scrollToTop()">↑</div>
+
+<script>
+window.onscroll = function() {
+    const btn = document.getElementById('back-to-top');
+    btn.style.display = (window.scrollY > 200) ? "block" : "none";
+};
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
